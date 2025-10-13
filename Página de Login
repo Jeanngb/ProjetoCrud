@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+</head>
+<body>
+<H1>Site Para Listagens</H1>
+<HR></HR>
+    <form>
+        <div>
+            <label>Email</label> <br>
+            <input type="email" name="email" placeholder="Seu@email.com"/>
+        </div>
+        <div>
+            <label>Senha</label> <br>
+            <input type="password" name="password" placeholder="Senha"/>
+        </div>
+        <div>
+            <button type="button">Entrar</button>
+        </div>
+        <div>
+            <button type="button">Cadastrar</button>
+        </div>
+    </form>
+</body>
+</html>
