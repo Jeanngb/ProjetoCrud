@@ -1,4 +1,61 @@
 @charset "UTF-8";
 
-body{background-color: aquamarine;}
+body{
+background-image:url(BackgroundLogin.jpg);
+background-size: center;
+display: grid;
+place-items: center;
+min-height: 100vh;
+}
+
 button{background-color: rgb(102, 101, 101);}
+
+.Email{color: #d3d3d3;}
+
+.Ou{color: #d3d3d3;}
+
+.Senha{color: #d3d3d3;}
+
+.Login {
+text-align: center;
+ position: relative;
+  left: -650px;
+transform:translateY(-100px) ;
+}
+
+button{
+    background-color: #790000f5;
+    border-radius: 10px;
+    width:300px;
+    height: 50px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.caixadologin {
+  border-radius: 10px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 600px; /* Largura do conteúdo */
+  height: 100vh; /* Altura do conteúdo */
+  background-color: #000000f5; /* Cor de fundo */
+  padding: 20px; /* 20px de preenchimento em todos os lados */
+  border: 1px solid #ffffffa1; /* 5px de borda sólida e azul */
+  margin: 0px; /* 15px de margem em todos os lados */
+  }
+
+input{
+background-color: #4242424d;
+border:1px solid #9b9a9ab9;
+border-radius: 5px;
+width: 450px; ;
+height: 45px;
+font-size: 20px;
+}
+
+.password{
+border-radius:5px ;
+width: 450px;
+height: 45px;
+}
