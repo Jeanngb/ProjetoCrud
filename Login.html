@@ -4,12 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheetlogin.css" media="screen" />
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="login.css" media="screen" />
 </head>
 <body>
+
+    <img src="../Imagens/BackgroundLogin.jpg" alt="#"> 
+
+    <section class="login">
+        <h1 class="tt">CineCritic</h1>
+        <form>
+            <div class="email">
+                <label for="email" class="tt-email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="senha">
+                <label for="senha" class="tt-senha">Senha</label>
+                <input type="senha" id="senha" name="senha" placeholder="Senha" required>
+                <a href="#" class="esqueceuSenha">Esqueceu a senha?</a>
+            </div>
+            <a class="btn-entrar" href="../Interface Do Site/InterfaceDoSite.html">Entrar</a>
+            <p class="txt-cadastro">Não tem conta? <a href="../Cadastro/Cadastro.html" class="link-cadastro">Criar conta</a></p>
+        </form>
+    </section>
     
-    <form>
+    <!-- <form>
         <div class="caixadologin"> </div>
         <section class="Login">
         <div>
@@ -27,11 +46,11 @@
         </div>
         <H3 class="Ou">OU</H3>
         <div>
-            <button type="button">Cadastrar</button>
+        <a href="Cadastro.html">    <button type="button">Cadastrar</button></a>
         </div>
     </section>
        
-    </form>
-    
+    </form> -->
+    <script src="login.js"></script>
 </body>
 </html>
