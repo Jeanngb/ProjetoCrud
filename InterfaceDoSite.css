@@ -1,38 +1,138 @@
-body {background-color: #464646;}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
 
-.barrasuperior {
-    position: normal;
+body{
+    background-color: #293b6e;
+}
+
+header{
+    background-color: #161c72;
+    color: rgb(231, 162, 13);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding-inline: 2vw 5vw;
+    position: fixed;
+    width: 100vw;
+    z-index: 999;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    background-color: #000000;
+}
+
+header .barraPesquisa{
+    background: transparent;
+    width: 25vw;
+    height: 5vh;
+    border-radius: 10px;
+    border: 1.5px solid white;
+    padding: 2px 2px 2px 15px;
+    font-size: 1rem;
+}
+
+header input::placeholder{
+    color: rgba(255, 255, 255, 0.541);
+}
+
+header .btn-entrar{
+    padding: 7px 20px;
+    border: 1.5px solid white;
+    border-radius: 3px;
+    color: inherit;
+    text-decoration: none;
     color: white;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
 }
 
-.maispopulares {
-    font-size: 33px;
-    color: #ffffff;
+main{
+    margin-top: 8vh;
+    padding: 40px 20px;
 }
 
-.home {
-    width: 150px; ;
-    height: 50px;
-    border-radius: 15px;
-    background-color: #464646;
-    border-color: #cacaca;
+.cCarrosseis{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.carrossel {
+    position: relative;
+    margin: 1rem 0;
+    height: fit-content;
+    display: block;
+}
+
+.carrossel .carrossel-track {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    padding-bottom: 8px;
+}
+
+/* esconder scrollbar, mas manter scroll funcional */
+.carrossel .carrossel-track::-webkit-scrollbar { display: none; }
+.carrossel .carrossel-track { -ms-overflow-style: none; scrollbar-width: none; }
+
+.itemCarrossel{
+    flex: 0 0 auto;
+    width: 180px;
+    scroll-snap-align: start;
+    text-align: center;
+    height: 260px;
+}
+
+.itemCarrossel .imgFilme {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    border-radius: 6px;
+    background: #222;
+}
+
+.itemCarrossel .imgFilme img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.itemCarrossel p{
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+
+/* Botões prev/next */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-70%);
+    z-index: 5;
+    background: rgb(231, 162, 13);
+    border: none;
+    color: #fff;
     font-size: 24px;
-    color: #ffffff;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
 }
 
-.minhalista {
-    width: 150px; ;
-    height: 50px;
-    border-radius: 15px;
-    background-color: #464646;
-    border-color: #cacaca;
-    font-size: 24px;
-    color: #ffffff;
-}
+.carousel-btn.prev { left: 6px; }
+.carousel-btn.next { right: 6px; }
+
+/* feedback ao arrastar */
+.carrossel .carrossel-track.dragging { cursor: grabbing; cursor: -webkit-grabbing; }
+
+
+
